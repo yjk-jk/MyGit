@@ -25,6 +25,7 @@ public enum ReturnCodeEnum {
     /**access_denied**/
     RC401("401","匿名用户访问无权限资源时的异常"),
     RC404("404","404页面找不到的异常"),
+
     /**服务异常**/
     RC500("500","系统异常，请稍后重试"),
     RC375("375","数学运算异常，请稍后重试"),
@@ -41,6 +42,7 @@ public enum ReturnCodeEnum {
     UserCredentialsExpired("1010","用户凭证已过期"),
     UserNotAllowed("1011","用户不允许访问"),
     UNSUPPORTED_GRANT_TYPE("1003", "不支持的认证模式");
+
 
 
 
