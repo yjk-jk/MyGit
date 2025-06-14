@@ -1,19 +1,19 @@
 package com.itheima.springboot.service.Ipml;
 
-import com.itheima.springboot.mapper.UserMapper;
 import com.itheima.springboot.entities.User;
+import com.itheima.springboot.mapper.UserMapper;
 import com.itheima.springboot.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 @Service
 public class UserServiceImpl implements UserService {
-    //使用@Resource注解注入UserDao
-//    @Autowired
-//    @Qualifier("myUserDao")
 
-    @Autowired
+
+    @Resource
     private UserMapper userMapper;
 
 
@@ -26,5 +26,28 @@ public class UserServiceImpl implements UserService {
         User user = new User();
         user.setUsername(username);
         return userMapper.selectOne(user);
+    }
+
+    @Override
+    public List<User> findByUser(User user) {
+        return userMapper.findUserBySelectiveCriteria(user);
+    }
+
+
+    @Override
+    public void update(User user) {
+        userMapper.updateByPrimaryKey(user);
+    }
+
+    @Override
+    public void delete(String username) {
+        User user = new User();
+        user.setUsername(username);
+        userMapper.delete(user);
+    }
+
+    @Override
+    public List<User> findAll() {
+        return userMapper.selectAll();
     }
 }

@@ -1,10 +1,10 @@
 package com.itheima.springboot.service.Ipml;
 
 
-import com.itheima.springboot.mapper.CityMapper;
 import com.itheima.springboot.entities.City;
+import com.itheima.springboot.mapper.CityMapper;
 import com.itheima.springboot.service.CityService;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class CityServiceImpl implements CityService {
 
-    @Autowired
+    @Resource
     private CityMapper cityMapper;
 
     public List<City> getAllCities() {

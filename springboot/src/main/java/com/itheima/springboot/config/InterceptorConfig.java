@@ -20,8 +20,8 @@ public class InterceptorConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         // 注册一个拦截器，拦截所有请求，并在请求前后打印日志
         registry.addInterceptor(loginInterceptor())
-                .addPathPatterns()
-                .excludePathPatterns("/**");
+                .addPathPatterns("/book/**");
+
 
     }
 }

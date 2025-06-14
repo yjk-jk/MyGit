@@ -1,0 +1,23 @@
+
+
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.itheima.springboot.entities
+  configuration:
+    map-underscore-to-camel-case: true
+
+config:
+  jwt:
+    secret: jfsdjss
+
+logging:
+  level:
+    root: info
+    com.itheima.springboot.intercept.LoginInterceptor: info
+
+
+
+
+

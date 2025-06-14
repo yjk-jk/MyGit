@@ -15,10 +15,10 @@
             <property name="caseSensitive" value="true"/>
         </plugin>
 
-        <jdbcConnection driverClass="${jdbc.driverClass}"
-                        connectionURL="${jdbc.url}"
-                        userId="${jdbc.user}"
-                        password="${jdbc.password}">
+        <jdbcConnection driverClass="${spring.datasource.driver-class-name}"
+                        connectionURL="${spring.datasource.url}"
+                        userId="${spring.datasource.username}"
+                        password="${spring.datasource.password}">
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="${package.name}.entities" targetProject="src/main/java"/>
