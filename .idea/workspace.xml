@@ -4,27 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5652d43f-5110-43c1-8939-761f15f95c26" name="Changes" comment="third commit">
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bd2ac3d2-7d55-4323-8a9f-87b10644123a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bd2ac3d2-7d55-4323-8a9f-87b10644123a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/config/AppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/config/MyConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/controller/CityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/entities/City.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/entities/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/mapper/CityMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/service/Ipml/CityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/service/Ipml/CityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/service/Ipml/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/service/Ipml/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/mapper/CityMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+    <list default="true" id="5652d43f-5110-43c1-8939-761f15f95c26" name="Changes" comment="fourth commit">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/config/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/entities/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/mapper/CityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/resources/mapper/CityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/.prettierrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/api/cities/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/api/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/api/user/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/assets/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/assets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/assets/画画.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/display/footer/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/city-manage/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/city/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/home/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/login/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/my/aboutme/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/my/collection/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/my/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/my/setting/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/register/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travl-ui/travl/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,6 +303,7 @@
       <workItem from="1750219352151" duration="1949000" />
       <workItem from="1750223685944" duration="2557000" />
       <workItem from="1750228477969" duration="4677000" />
+      <workItem from="1750246713629" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -307,7 +329,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749906359772</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="third commit">
+      <option name="closed" value="true" />
+      <created>1750246956354</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750246956354</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fourth commit">
+      <option name="closed" value="true" />
+      <created>1750247040485</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750247040485</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +427,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
     <MESSAGE value="third commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
+    <MESSAGE value="fourth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fourth commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

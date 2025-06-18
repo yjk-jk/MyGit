@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.springboot.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.itheima.springboot.entities.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="role" jdbcType="CHAR" property="role" />
+  </resultMap>
+    <select id="findUserBySelectiveCriteria" resultType="com.itheima.springboot.entities.User">
+
+        SELECT * FROM user
+        WHERE 1=1
+        <if test="id != null AND id != ''">
+          AND id = #{id}
+        </if>
+        <if test="username != null AND username != ''">
+          AND username = #{username}
+        </if>
+        <if test="password != null AND password != ''">
+          AND password = #{password}
+        </if>
+        <!-- 根据需要添加更多条件 -->
+        <if test="role != null AND role != '">
+          AND role = #{role}
+        </if>
+
+    </select>
+</mapper>
