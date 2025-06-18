@@ -32,7 +32,7 @@ CREATE TABLE `city` (
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `city` (
 
 LOCK TABLES `city` WRITE;
 /*!40000 ALTER TABLE `city` DISABLE KEYS */;
-INSERT INTO `city` VALUES (1,'Paris','France','The City of Light, famous for the Eiffel Tower and Louvre Museum.','Spring and Fall','http://localhost:8001/uploads/bali.jpg','2025-06-09 12:16:30','2025-06-09 12:16:30'),(2,'Tokyo','Japan','A vibrant metropolis blending traditional culture with cutting-edge technology.','Spring and Autumn','http://localhost:8001/uploads/东京塔.webp','2025-06-09 12:16:30','2025-06-09 12:16:30'),(3,'New York','USA','The Big Apple, known for Times Square, Central Park, and the Statue of Liberty.','April-June, September-November','http://localhost:8001/uploads/广州f.jpg','2025-06-09 12:16:30','2025-06-09 12:16:30'),(4,'广州','中国','beatuilful','随时','http://localhost:8001/uploads/广州.webp','2025-06-09 18:53:40','2025-06-09 18:53:40'),(5,'梅州','中国','非常的好玩','一年四季','http://localhost:8001/uploads/广州f.jpg',NULL,'2025-06-14 12:55:36');
+INSERT INTO `city` VALUES (1,'Paris1','France','The City of Light, famous for the Eiffel Tower and Louvre Museum.','Spring and Fall','http://localhost:8001/uploads/bali.jpg','2025-06-09 12:16:30','2025-06-09 12:16:30'),(2,'Tokyo','Japan','A vibrant metropolis blending traditional culture with cutting-edge technology.','Spring and Autumn','http://localhost:8001/uploads/东京塔.webp','2025-06-09 12:16:30','2025-06-09 12:16:30'),(3,'New York','USA','The Big Apple, known for Times Square, Central Park, and the Statue of Liberty.','April-June, September-November','http://localhost:8001/uploads/梅州.webp','2025-06-09 12:16:30','2025-06-09 12:16:30'),(4,'广州','中国','beatuilful','随时','http://localhost:8001/uploads/广州.webp','2025-06-09 18:53:40','2025-06-09 18:53:40'),(5,'梅州','中国','非常的好玩','一年四季','http://localhost:8001/uploads/梅州.webp',NULL,'2025-06-14 12:55:36'),(6,'汕头','中国','潮汕','暑假','http://localhost:8001/uploads/汕头.webp',NULL,'2025-06-16 02:01:42');
 /*!40000 ALTER TABLE `city` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -56,8 +56,9 @@ CREATE TABLE `user` (
   `id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(20) DEFAULT NULL,
   `password` varchar(20) DEFAULT NULL,
+  `role` enum('user','admin') DEFAULT 'user',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,7 +67,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'张三','123456');
+INSERT INTO `user` VALUES (1,'张三','123456','user'),(2,'赵培炜','123456','user');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -79,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-14 21:04:37
+-- Dump completed on 2025-06-18 19:50:56
