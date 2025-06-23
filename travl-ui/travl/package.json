@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
+    "build:prod": "vite build --mode production",
+    "build:dev": "vite build --mode development",
     "preview": "vite preview",
+    "analyze": "vite build --mode production && vite analyze",
     "format": "prettier --write src/"
   },
   "dependencies": {

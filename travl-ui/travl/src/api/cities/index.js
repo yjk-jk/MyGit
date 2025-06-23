@@ -8,6 +8,15 @@ export const getAllCities = () => {
     });
 };
 
+// 获取分页城市列表
+export const getAllCitiesByPage = (params) => {
+    return request({
+        url: '/cities/getAllByPage',
+        method: 'post',
+        params: params
+    });
+};
+
 // 添加城市
 export const addCity = (data) => {
     return request({

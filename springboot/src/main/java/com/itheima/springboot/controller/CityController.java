@@ -1,5 +1,8 @@
 package com.itheima.springboot.controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.github.pagehelper.PageInterceptor;
 import com.itheima.springboot.entities.City;
 import com.itheima.springboot.resp.ResultData;
 import com.itheima.springboot.service.Ipml.CityServiceImpl;
@@ -27,6 +30,8 @@ public class CityController {
 
     @Autowired
     private CityServiceImpl cityService;
+    @Autowired
+    private PageInterceptor pageInterceptor;
 
     // 图片上传接口
     @PostMapping("/{cityId}/upload")
@@ -54,7 +59,7 @@ public class CityController {
         // 将文件保存到指定目录
         file.transferTo(uploadFile);
 
-        String url = "http://localhost:8001/uploads/"+file.getOriginalFilename();
+        String url = "http://localhost:8001/uploads/" + file.getOriginalFilename();
 
         // 更新数据库记录
         city.setImageUrl(url);
@@ -63,8 +68,6 @@ public class CityController {
         return ResultData.success("上传成功");
 
     }
-
-
 
 
     // 图片下载接口
@@ -83,22 +86,32 @@ public class CityController {
         String localPath = city.getImageUrl().replace("http://localhost:8001/uploads/", "D:/uploads/");
 
         FileInputStream fileInputStream = new FileInputStream(localPath);
-            // 生成唯一文件名
-            String fileName = UUID.randomUUID().toString();
-            InputStreamResource inputStreamResource = new InputStreamResource(fileInputStream);
+        // 生成唯一文件名
+        String fileName = UUID.randomUUID().toString();
+        InputStreamResource inputStreamResource = new InputStreamResource(fileInputStream);
 
-            return ResponseEntity.ok()
-                    .contentType(ImageUtil.getMediaType(localPath))
-                    .contentLength(fileInputStream.available())
-                    .header(HttpHeaders.CONTENT_DISPOSITION, fileName)
-                    .body(inputStreamResource);
+        return ResponseEntity.ok()
+                .contentType(ImageUtil.getMediaType(localPath))
+                .contentLength(fileInputStream.available())
+                .header(HttpHeaders.CONTENT_DISPOSITION, fileName)
+                .body(inputStreamResource);
 
     }
 
 
+    @PostMapping("/getAllByPage")
+    @Operation(summary = "获取所有城市")
+    public ResultData getAllCitiesByPage(@RequestParam("pageNum") Integer pageNum,
+                                               @RequestParam("pageSize") Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<City> cities = cityService.getAllCities();
+        PageInfo<City> cityPageInfo = new PageInfo<>(cities);
+        return ResultData.success(cityPageInfo);
+    }
+
     @GetMapping("/getAll")
     @Operation(summary = "获取所有城市")
-    public ResultData<List<City>> getAllCities() {
+    public ResultData getAllCities() {
         List<City> cities = cityService.getAllCities();
         return ResultData.success(cities);
     }
@@ -113,6 +126,7 @@ public class CityController {
     @GetMapping("/get/{id}")
     @Operation(summary = "根据id获取城市")
     public ResultData<City> getCityById(@PathVariable("id") Integer id) {
+
         City city = cityService.getCityById(id);
         return ResultData.success(city);
     }

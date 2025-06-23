@@ -29,6 +29,18 @@
           </template>
         </el-table-column>
       </el-table>
+      <div class="pagination-container">
+        <el-pagination
+          @size-change="handleSizeChange"
+          @current-change="handleCurrentChange"
+          :current-page="currentPage"
+          :page-sizes="[10, 20, 30, 50]"
+          :page-size="pageSize"
+          layout="total, sizes, prev, pager, next, jumper"
+          :total="total"
+        >
+        </el-pagination>
+      </div>
     </el-card>
 
     <!-- 添加/编辑对话框 -->
@@ -83,11 +95,15 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useStore } from 'vuex'
+import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { ElMessageBox } from 'element-plus'
-import { getAllCities, addCity, updateCity, deleteCity, uploadCityImage } from '@/api/cities'
+import { getAllCitiesByPage, addCity, updateCity, deleteCity, uploadCityImage } from '@/api/cities'
 import Footer from '@/display/footer/index.vue'
 const cityList = ref([])
+const currentPage = ref(1)
+const pageSize = ref(5)
+const total = ref(0)
 const dialogVisible = ref(false)
 const uploadDialogVisible = ref(false)
 const currentCityId = ref(null)
@@ -108,12 +124,28 @@ const uploadUrl = ref('')
 // 获取城市列表
 const fetchCities = async () => {
   try {
-    const res = await getAllCities()
-    cityList.value = res.data.data
+    const res = await getAllCitiesByPage({
+      pageNum: currentPage.value,
+      pageSize: pageSize.value,
+    })
+    cityList.value = res.data.data.list
+    total.value = res.data.data.total
     console.log('城市列表:', cityList.value)
   } catch (error) {
     console.error('获取城市列表失败', error)
   }
+}
+
+// 分页变化处理
+const handleCurrentChange = (val) => {
+  currentPage.value = val
+  fetchCities()
+}
+
+// 每页条数变化处理
+const handleSizeChange = (val) => {
+  pageSize.value = val
+  fetchCities()
 }
 
 // 显示添加对话框
@@ -198,11 +230,13 @@ const handleUpload = (row) => {
 const store = useStore()
 const router = useRouter()
 
+const role = computed(() => store.state.user.role)
+
 onMounted(() => {
-  if (store.state.user.role !== 'admin') {
+  if (role.value !== 'admin') {
     ElMessageBox.alert('管理员才能访问此页面！请联系管理员', '提示', {
       confirmButtonText: '确定',
-      callback: () => router.push('/'),
+      callback: () => router.go(-1),
     })
     return
   }
@@ -218,5 +252,9 @@ onMounted(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.pagination-container {
+  margin-top: 20px;
+  text-align: right;
 }
 </style>

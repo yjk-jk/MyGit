@@ -63,6 +63,7 @@ export default createStore({
       localStorage.setItem('token', userData.token)
       localStorage.setItem('userId', userData.userId)
       localStorage.setItem('username', userData.username)
+      localStorage.setItem('role', userData.role)
     },
     CLEAR_USER(state) {
       state.user = {

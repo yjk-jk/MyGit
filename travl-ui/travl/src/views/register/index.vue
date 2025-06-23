@@ -88,12 +88,17 @@ const handleRegister = () => {
 
     loading.value = true
     try {
-      await UserRegister({
+      const res = await UserRegister({
         username: registerForm.value.username,
         password: registerForm.value.password,
       })
-      ElMessage.success('注册成功')
-      router.push('/login')
+      let code = res.data.code
+      if (code === 200) {
+        ElMessage.success('注册成功，请登录')
+        router.push('/login')
+      } else {
+        ElMessage.error(res.data.msg)
+      }
     } catch (error) {
       console.error('注册失败:', error)
       ElMessage.error('注册失败')

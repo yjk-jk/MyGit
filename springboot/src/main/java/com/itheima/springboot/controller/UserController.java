@@ -41,9 +41,10 @@ public class UserController {
         if(user1!=null){
             return ResultData.fail(ReturnCodeEnum.UserAlreadyExist.getCode(),
                     ReturnCodeEnum.UserAlreadyExist.getMsg());
-        }
+        }else {
         userService.save(user);
-        return ResultData.success("新增成功");
+            return ResultData.success("新增成功");
+        }
     }
 
 

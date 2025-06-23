@@ -5,47 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5652d43f-5110-43c1-8939-761f15f95c26" name="Changes" comment="fourth commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/config/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/entities/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/mapper/CityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/resources/mapper/CityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/.prettierrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/api/cities/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/api/request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/api/user/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/assets/画画.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/display/footer/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/city-manage/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/city/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/home/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/login/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/my/aboutme/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/my/collection/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/my/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/my/setting/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/register/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travl-ui/travl/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/config/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/config/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/controller/CityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/itheima/springboot/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travl-ui.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travl-ui/travl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/travl-ui/travl/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travl-ui/travl/src/api/cities/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travl-ui/travl/src/api/cities/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travl-ui/travl/src/api/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/travl-ui/travl/src/api/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travl-ui/travl/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travl-ui/travl/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travl-ui/travl/src/views/city-manage/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/city-manage/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travl-ui/travl/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travl-ui/travl/src/views/register/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/travl-ui/travl/src/views/register/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travl-ui/travl/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/travl-ui/travl/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +96,7 @@
     &quot;Maven.springboot [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.springboot [org.mybatis.generator:mybatis-generator-maven-plugin:1.4.2:generate].executor&quot;: &quot;Run&quot;,
     &quot;Maven.springboot [org.mybatis.generator:mybatis-generator-maven-plugin:1.4.2:help].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot [package].executor&quot;: &quot;Run&quot;,
     &quot;Maven.webproject [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.webproject [package].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -136,7 +111,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;22 (2)&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/资料/旅游项目&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/资料/旅游项目/sql&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -147,6 +122,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\IntelliJ IDEA 2024.1.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -157,11 +133,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\资料\旅游项目\sql" />
       <recent name="D:\资料\webproject\springboot\src\main\java\com\itheima\springboot" />
       <recent name="D:\资料\webproject\springboot\src\main\resources" />
       <recent name="D:\资料\webproject\springboot\src\main\resources\mapper" />
       <recent name="D:\资料\webproject\springboot\src\main\java\com\itheima\springboot\config" />
-      <recent name="D:\liupan\webproject\springboot\src\main\java\com\itheima\springboot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\资料\旅游项目\springboot\src\main\resources\mapper" />
@@ -303,7 +279,16 @@
       <workItem from="1750219352151" duration="1949000" />
       <workItem from="1750223685944" duration="2557000" />
       <workItem from="1750228477969" duration="4677000" />
-      <workItem from="1750246713629" duration="334000" />
+      <workItem from="1750246713629" duration="1944000" />
+      <workItem from="1750554382176" duration="410000" />
+      <workItem from="1750555167809" duration="720000" />
+      <workItem from="1750560479533" duration="2289000" />
+      <workItem from="1750564946384" duration="1255000" />
+      <workItem from="1750568984878" duration="531000" />
+      <workItem from="1750595384879" duration="4151000" />
+      <workItem from="1750640828323" duration="1350000" />
+      <workItem from="1750643854582" duration="134000" />
+      <workItem from="1750646550384" duration="668000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -345,7 +330,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750247040485</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fourth commit">
+      <option name="closed" value="true" />
+      <created>1750247152849</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750247152849</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fourth commit">
+      <option name="closed" value="true" />
+      <created>1750247521996</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750247521996</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

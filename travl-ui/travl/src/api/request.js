@@ -54,12 +54,14 @@ service.interceptors.response.use(
   },
   (error) => {
     console.log('err', error) // 修正这里，使用逗号分隔字符串
-    console.error('响应错误', error.response.data.message)
-    let { message } = error.response.data.message
+    console.error('响应错误', error.response?.data?.message)
+    let message = error.response?.data?.message || error.message
     if (error.response) {
       // 服务器响应错误
-      router.push('/login') // 跳转到登录页面
-      message = `${error.response.data.code} ${error.response.data.message}`
+      if (error.response.status === 401) {
+        router.push('/login') // 跳转到登录页面
+      }
+      message = error.response.data?.message || error.message
     } else if (error.request) {
       // 请求发送但没有收到响应
       message = '请求超时或没有收到服务器响应'

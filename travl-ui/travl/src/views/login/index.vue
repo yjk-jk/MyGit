@@ -45,6 +45,7 @@ export default {
           token: response.data.data.token,
           username: this.username,
           userId: response.data.data.user.id,
+          role: response.data.data.user.role,
         })
 
         // 跳转到首页或原请求页面
